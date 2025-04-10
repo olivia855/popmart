@@ -1,0 +1,260 @@
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>POP MART (home) </title>
+    <link rel="icon" type="image/x-icon" href="images/headic.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="company.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="poppins">
+    <nav class="navbar navbar-expand-sm" style="height: 100px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><a href="home.html"><img src="icon.webp"
+                        style="width: 90px;"></a></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="col-sm-8">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">NEW & FEATURED</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">CHARACTERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">ACCESORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">MEGA</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search"
+                            style="width:100px; height:30px;" id="search">
+                        <div class="icons">
+                            <p><img src="images/user.png" class="icon"><a href="member.html">Sign in / Register</a></p>
+                            <p><img src="images/service.webp" class="icon"></p>
+                            <p><img src="images/heart.png" class="icon"></p>
+                            <p><img src="images/bag.png" class="icon">0</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5">
+                <img src="images/productpic (1).png">
+            </div>
+            <div class="col-sm-3">
+                <h5>SKULLPANDA Winter Symphony Series Plush</h5>
+                <br>
+                <h5 class="price">$27.99</h5>
+                <br>
+                <h5>SIZE</h5>
+                <div id="sizeoptions">
+                    <div class="size-option">
+                        <p>Single box</p>
+                    </div>
+                    <div class="size-option">
+                        <p>Whole set</p>
+                    </div>
+                </div>
+                <br>
+                <h5>Quantity</h5>
+                <div clss="quantity-option">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="text" id="quantityinput" value="1">
+                    <button class="quantity-btn" id="increase">+</button>
+                </div>
+                <br>
+                <div id="bagoptions">
+                    <div class="favorite">
+                        <p>Favorite</p>
+                    </div>
+                    <div class="addbag">
+                        <p>ADD TO BAG</p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <div class="pick">
+                        <p>New way to explore blind box</p>
+                        <p class="gstext2">Pick A Box----Shake For Hints----Unbox Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.size-option').forEach(option => {
+            option.addEventListener('click', () => {
+                document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove(
+                    'active'));
+                option.classList.add('active');
+            });
+        });
+
+        const input = document.getElementById("quantityinput");
+        const inc = document.getElementById("increase");
+        const dec = document.getElementById("decrease");
+
+        inc.addEventListener("click", () => {
+            input.value = parseInt(input.value) + 1;
+        });
+
+        dec.addEventListener("click", () => {
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        });
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class=" footer">
+        <div class="beige">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <h4>FOLLOW US ON</h4>
+                </div>
+                <div class="col-sm-9"></div>
+            </div>
+        </div>
+        <div class="black">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <p>JOIN THE COMMUNITY</p>
+                    <br>
+                    <p class="gstext">Be the first to catch our new releases, exclusive offers, and more.</p>
+                    <br>
+                    <br>
+                    <div class="input-group mb-3 input-group-sm">
+                        <input type="text" class="form-control" placeholder="Your email address">
+                        <button class="btn btn-basic sign" type="submit">Sign Me Up</button>
+                    </div>
+                    <p>Contact Us</p>
+                    <br>
+                    <div class="box1">
+                        <p class="chat1">Chat</p>
+                        <br>
+                        <p class="gstext">Monday - Sunday 8:00am-2:00am PDT</p>
+                    </div>
+                    <br>
+                    <div class="box2">
+                        <p class="email1">Email</p>
+                        <br>
+                        <p class="gstext">na.support@popmart.com</p>
+                    </div>
+                    <br>
+                    <p class="gstext1">Visit Help Center (FAQs)</p>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <p>SUPPORT</p>
+                    <br>
+                    <p class="gstext">FAQ</p>
+                    <br>
+                    <p class="gstext">SHIPPING INFO</p>
+                    <br>
+                    <p class="gstext">PRIVACY POLICY</p>
+                    <br>
+                    <p class="gstext">TERMS & CONDITIONS</p>
+                    <br>
+                    <p class="gstext">TRACK YOUR ORDER</p>
+                    <br>
+                    <p class="gstext">FIND A STORE</p>
+                    <br>
+                    <p class="gstext">RETURNS</p>
+                    <br>
+                    <p class="gstext">POP BLOCKS</p>
+                </div>
+                <div class="col-sm-2">
+                    <p>ABOUT US</p>
+                    <br>
+                    <p class="gstext">NEWS</p>
+                    <br>
+                    <p class="gstext">ARTISTS</p>
+                    <br>
+                    <p class="gstext">ABOUT POP MART</p>
+                    <br>
+                    <p class="gstext">INVESTOR RELATIONS</p>
+                    <br>
+                    <p class="gstext">CONTACT US</p>
+                    <br>
+                    <p class="gstext">CAREERS</p>
+                </div>
+                <div class="col-sm-2">
+                    <p>SHOP</p>
+                    <br>
+                    <p class="gstext">LAUNCH CALENDAR</p>
+                    <br>
+                    <p class="gstext">TRENDING</p>
+                    <br>
+                    <p class="gstext">BLIND BOXES</p>
+                    <br>
+                    <p class="gstext">MEGA COLLECTIONS</p>
+                    <br>
+                    <p class="gstext">ACCESORIES</p>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
